@@ -9,6 +9,9 @@
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 .header {
   display: flex;
@@ -25,6 +28,8 @@
     flex-grow: 4;
     justify-content: flex-end;
     margin-right: 40px;
+    height: 100px;
+    align-items: center;
 
     ul {
       list-style-type: none;
@@ -35,6 +40,7 @@
         color: $heaader_footer_text;
         font-weight: 400;
         font-size: 20px;
+        padding: 35px 0;
       }
     }
   }
@@ -80,9 +86,9 @@ nav a,
   margin: 0;
 
   .section1_hero {
-    background-color: rgb(0, 0, 0, 1);
+    background-color: rgb(0, 0, 0, 0.65);
     width: 100%;
-    height: inherit;
+    min-height: inherit;
 
     h1 {
       position: absolute;
