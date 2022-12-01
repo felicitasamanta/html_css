@@ -1,9 +1,10 @@
-@import '_variables.scss';
+@import "_variables.scss";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: $font_family;
 }
 .wrapper {
   max-width: 1200px;
@@ -11,7 +12,6 @@
 }
 .header {
   display: flex;
-  justify-content: space-between;
   margin: 0 20px;
   height: 100px;
   align-items: center;
@@ -32,60 +32,47 @@
       gap: 20px;
 
       li a {
-        color: #4a4a4a;
+        color: $heaader_footer_text;
         font-weight: 400;
         font-size: 20px;
       }
     }
-
-    a {
-      text-decoration: none;
-      text-transform: uppercase;
-    }
-  }
-
-  .icons {
-    display: flex;
-    flex-grow: 1;
-
-    .icons_image {
-      border: 1px solid #000;
-      margin: 0 auto;
-      border-radius: 50%;
-      width: 35px;
-      height: 35px;
-
-      img {
-        margin: 2.5px;
-        width: 30px;
-        height: 30px;
-        padding: 5px;
-      }
-    }
   }
 }
 
-// SECTION
+// MAINS
 
 #section {
   margin: 30px 0 50px;
 }
+.section_flex {
+  @extend %section_flex;
+}
+.section_p {
+  @extend %p;
+}
 h2 {
-  margin-bottom: 20px;
-  font-style: italic;
-  font-size: 30px;
-
-  &:first-letter {
-    text-transform: uppercase;
-  }
+  @extend %h2;
+}
+a {
+  text-decoration: none;
+}
+nav a,
+.section1 a,
+.section5 a {
+  text-transform: uppercase;
+}
+.icons {
+  @extend %icons;
 }
 
+// SECTION
 .section1 {
   background-image: url(../images/kids_main.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 600px;
+  min-height: 600px;
   width: 100%;
   color: $main_text;
   position: relative;
@@ -93,13 +80,13 @@ h2 {
   margin: 0;
 
   .section1_hero {
-    background-color: rgb(0, 0, 0, 0.3);
+    background-color: rgb(0, 0, 0, 1);
     width: 100%;
     height: inherit;
 
     h1 {
       position: absolute;
-      font-size: 60px;
+      font-size: 66px;
       left: 100px;
       top: 180px;
     }
@@ -108,34 +95,17 @@ h2 {
       position: absolute;
       left: 100px;
       top: 350px;
-      @extend %button;
-
-      &:first-letter {
-        text-transform: uppercase;
-      }
+      @extend %white_button;
     }
   }
 }
 
 // SECTION2
 .section2 {
-  color: #557987;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  p {
-    width: 70%;
-    text-align: center;
-    line-height: 1.2;
-  }
-
   .p2 {
     margin-top: 10px;
   }
   a {
-    text-decoration: none;
     color: $background;
   }
 }
@@ -143,7 +113,7 @@ h2 {
 //  SECTION3
 .section3 {
   background-color: $background;
-  height: 700px;
+  min-height: 700px;
   color: $main_text;
   text-align: center;
   width: 100%;
@@ -153,22 +123,16 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    min-height: inherit;
 
     .blue_h2 {
       align-items: flex-end;
     }
-    .blue_top {
-      display: flex;
-      justify-content: space-evenly;
-
-      align-items: flex-start;
-    }
+    .blue_top,
     .blue_bottom {
-      display: flex;
-      justify-content: space-evenly;
-
-      align-items: flex-start;
+      @extend %blue_top_bottom;
     }
+
     .card {
       width: 30%;
       display: flex;
@@ -177,16 +141,17 @@ h2 {
       justify-content: space-between;
       height: 250px;
       flex-grow: 1;
-    }
 
+      h3 {
+        padding-top: 20px;
+      }
+    }
     h2 {
-      /* margin: 50px 0; */
       flex-grow: 1;
     }
   }
   a {
-    text-decoration: none;
-    color: $background;
+    color: $main_text;
     font-size: larger;
   }
   img {
@@ -195,5 +160,82 @@ h2 {
   p {
     width: 80%;
     line-height: 1.4;
+  }
+}
+// SECTION 5
+.section5 {
+  min-height: 300px;
+  display: flex;
+  gap: 50px;
+
+  .camp_card {
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-grow: 1;
+    color: $second_text;
+
+    img {
+      height: 250px;
+      width: 100%;
+    }
+
+    .c_card_text {
+      display: flex;
+      justify-content: space-between;
+
+      .small_text {
+        font-size: 15px;
+        font-weight: 300;
+      }
+
+      .price {
+        display: flex;
+        justify-content: flex-end;
+        padding: 5px;
+        font-size: 30px;
+        color: $main_text;
+        background-color: $background;
+        border: $background 1px solid;
+      }
+    }
+    .c_card_info {
+      line-height: 1.5;
+      position: relative;
+      padding-top: 20px;
+    }
+    .c_card_info::before {
+      position: absolute;
+      content: "";
+      height: 2px;
+      top: 5px;
+      width: 100%;
+      background: $second_text;
+    }
+  }
+  a {
+    @extend %blue_button;
+    display: flex;
+  }
+}
+// footer
+
+footer {
+  height: 70px;
+  background-color: $background;
+  color: $second_text;
+  padding: 0 100px;
+  margin-top: 80px;
+
+  .footer_div {
+    display: flex;
+    align-items: center;
+    height: inherit;
+
+    .footer_p {
+      display: flex;
+      flex-grow: 10;
+    }
   }
 }
