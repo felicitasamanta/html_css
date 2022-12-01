@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  ont-family: "Maitree", serif;
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #eed0ee;
+  position: relative;
+  overflow: hidden;
+}
+
+.content {
+  max-width: 800px;
+  min-height: inherit;
+  margin: 0 auto;
+  display: flex;
+}
+.content_text {
+  min-height: 400px;
+  flex-grow: 1; /* uzima puse tecio plocio*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 240px;
+  flex-grow: 0;
+}
+.content_text h2 {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 82px;
+  text-transform: uppercase;
+}
+.content_text h1 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 50px;
+}
+.content_text p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+.content_text a {
+  display: block;
+  margin: 25px auto;
+  background: #9d0e67;
+  box-shadow: 0px 56px 23px rgba(37, 14, 37, 0.01),
+    0px 32px 19px rgba(37, 14, 37, 0.05), 0px 14px 14px rgba(37, 14, 37, 0.09),
+    0px 4px 8px rgba(37, 14, 37, 0.1), 0px 0px 0px rgba(37, 14, 37, 0.1);
+  text-decoration: none;
+  color: #fff;
+  width: 128px;
+  height: 43px;
+  text-align: center;
+  line-height: 43px;
+  font-size: 12px;
+}
+.content_image {
+  min-height: 400px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 30px;
+}
+.content_image img {
+  max-width: 306px;
+}
+.big {
+  position: absolute;
+  top: -70px;
+  right: -30px;
+  width: 300px;
+  transform: rotate(180deg);
+  animation-name: rotate-gear;
+  animation: rotate-gear 8s linear infinite;
+}
+.mid {
+  position: absolute;
+  top: 245px;
+  right: -30px;
+  width: 200px;
+  transform: rotate(180deg);
+  animation-name: rotate-gear2;
+  animation: rotate-gear2 8s linear infinite;
+}
+.small {
+  position: absolute;
+  bottom: 34px;
+  left: 0;
+  width: 134px;
+  transform: rotate(180deg);
+  animation-name: rotate-gear3;
+  animation: rotate-gear3 8s linear infinite;
+}
+@keyframes rotate-gear {
+  0% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+@keyframes rotate-gear2 {
+  0% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+@keyframes rotate-gear3 {
+  0% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}

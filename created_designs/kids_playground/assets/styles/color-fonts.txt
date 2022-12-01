@@ -1,0 +1,10 @@
+font family   => "PT Sans", sans-serif 
+primary color => #50b9e1 as the primary color
+h1 	      => font size 66px
+
+
+
+kitos sekcijos Antraštė
+Font size - 32px
+Font style - italic
+Letter spacing - 2px

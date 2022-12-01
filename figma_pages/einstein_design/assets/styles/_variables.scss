@@ -1,0 +1,74 @@
+// main settings
+
+$font: "Inter", sans-serif;
+
+$container: 912px;
+
+// color
+
+$green: #c6f4be;
+
+$dark: #212529;
+
+$light-bg: #f8f9fa;
+
+$grey-bg: #dee2e6;
+
+$grey-text: #6c757d;
+
+// Sablonas
+
+%wrapper {
+  max-width: $container;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+%title {
+  font-family: $font;
+
+  font-size: 64px;
+
+  font-weight: 600;
+}
+
+// mixin
+
+@mixin button($text, $bg) {
+  background-color: $bg;
+
+  color: $text;
+
+  width: 260px;
+
+  height: 50px;
+
+  text-decoration: none;
+
+  border: 2px solid $dark;
+
+  font-family: $font;
+
+  font-size: 20px;
+
+  text-align: center;
+
+  line-height: 50px;
+
+  border-radius: 10px;
+  display: inline-block;
+}
+
+@mixin text($color) {
+  color: $color;
+
+  font-size: 20px;
+
+  line-height: 30px;
+
+  font-family: $font;
+
+  font-weight: 400;
+}

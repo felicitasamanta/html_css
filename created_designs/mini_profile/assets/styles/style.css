@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+.wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 15px;
+}
+/* ------------ 
+HERO PAGE STYLE
+---------------
+*/
+.hero {
+  width: 100%;
+  background-image: url("../images/mini-profile-bg-01.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 1100px;
+}
+.hero_banner {
+  color: white;
+  min-height: 700px;
+  display: flex;
+  justify-content: flex-end; /* vidinis elementas eina i desine */
+  align-items: center; /* vidinis elementas lygiuojamas per centra */
+}
+.banner_box {
+  padding: 60px;
+  background-color: rgba(0, 0, 0, 0.5);
+  flex-basis: 460px;
+  text-align: center;
+  line-height: 1.5;
+  flex-shrink: 0;
+}
+.banner_box h1 {
+  font-size: 50px;
+  font-weight: 400;
+}
+.banner_box p {
+  font-size: 20px;
+}
+.hero_info {
+  min-height: 400px;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 20px;
+}
+.info_flex {
+  display: flex;
+  justify-content: space-between; /* sustato block elementus i linija */
+  flex-wrap: wrap;
+}
+.info_text {
+  color: #6b6b6b;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 400px;
+  flex-grow: 1;
+  padding: 20px 30px 20px 0;
+}
+.info_text h2 {
+  font-weight: 400;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.info_text p a {
+  text-decoration: none;
+  color: #3398cc;
+}
+.info_image {
+  background-color: #986665;
+  padding: 50px 30px;
+  color: #fff;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-basis: 40%;
+  flex-shrink: 1;
+  flex-grow: 1;
+}
+.info_image img,
+.info_image p {
+  margin: 20px 0 40px 0;
+}
+/*---------
+ Content section
+ ---------- */
+
+.content {
+  padding: 40px 0;
+}
+.item {
+  margin: 60px 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.item_color {
+  display: flex;
+  flex-basis: 330px;
+  flex-grow: 1;
+  min-height: 220px;
+  color: white;
+  font-weight: 400;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.item_color h2 {
+  font-weight: 400;
+  color: white;
+}
+.item_text {
+  flex-grow: 6;
+  flex-shrink: 1;
+  flex-basis: 600px;
+  padding: 20px 10px 20px 30px;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.item_text h2 {
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.green {
+  background-color: #98cb00;
+}
+.green_text {
+  color: #98cb00;
+}
+.orange {
+  background-color: orange;
+}
+.orange_text {
+  color: orange;
+}
+.blue {
+  background-color: blue;
+}
+.blue_text {
+  color: blue;
+}
+.grey {
+  background-color: gray;
+}
+.grey_text {
+  color: grey;
+}
+/* Footer section */
+.footer {
+  background-image: url(../images/mini-profile-bg-02.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 500px;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.footer_blocks {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+.block {
+  background-color: white;
+  margin: 20px 30px;
+  flex-grow: 1;
+  padding: 60px 20px;
+  text-align: center;
+  flex-basis: 250px;
+}
+.block img {
+  margin-bottom: 80px;
+}
+.block p {
+  text-align: left;
+  line-height: 1.5;
+}
+.footer_form {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 60%;
+  padding: 30px;
+  display: flex;
+  justify-content: flex-start;
+  margin:0 0 50px 30px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex-basis: 350px;
+  flex-grow: 0;
+}
+.form input,
+.form textarea {
+  border: none;
+  border-bottom: 1px solid #6b6b6b;
+  padding: 10px 5px;
+  margin: 10px 0;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.form input[type="button"] {
+  align-self: flex-end;
+  border: none;
+  padding: 15px 40px;
+  background-color: #6b6b6b;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.form input[type=button]:hover {
+    background-color: #98cb00;
+}
+.copy{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.copy a {
+    color: #98cb00;
+    text-decoration: none;
+
+}

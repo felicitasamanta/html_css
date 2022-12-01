@@ -1,0 +1,254 @@
+/* Žalia 
+hex - #43ca83
+rgb - rgb(67, 202, 131)
+
+Tamsiai melyna
+hex - #0e3655 */
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+main {
+  background: white;
+  width: 100%;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header {
+  height: 180px;
+  background-color: #f5f5f5;
+}
+.blue_background {
+  background-color: #0e3655;
+  height: 100px;
+}
+.blue_background_img {
+  width: 20px;
+  margin-top: 40px;
+  margin-right: 15px;
+}
+.blue_background_tel {
+  float: right;
+  line-height: 100px;
+  color: white;
+}
+.blue_background_tel a {
+  text-decoration: none;
+}
+
+/* ------ */
+.nav {
+  height: 60px;
+  width: 100%;
+}
+.nav_leftside_div {
+  display: inline-block;
+  width: 11%;
+  height: 60px;
+}
+.leftside_img {
+  width: 40px;
+  margin-top: 20px;
+}
+.leftside_p {
+  line-height: 80px;
+  float: right;
+  margin-left: 10px;
+  color: #0e3655;
+  font-size: 20px;
+  font-weight: bold;
+}
+.nav_rightside_div {
+  width: 89%;
+  float: right;
+  line-height: 80px;
+  height: 80px;
+}
+.nav_rightside_div ul {
+  text-align: right;
+}
+.nav_rightside_div li {
+  display: inline-block;
+}
+.nav_rightside_div li a {
+  text-decoration: none;
+  color: #0e3655;
+  font-weight: bold;
+  padding: 15px;
+}
+
+.home {
+  border: none;
+  background-color: rgb(67, 202, 131);
+  color: white;
+}
+
+.nav_rightside_div .home a {
+  color: white;
+}
+/* --------section1 */
+.section1 {
+  background-color: rgb - rgb(67, 202, 131);
+  background: url(../images/buildings.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+}
+.section1_greenbackground {
+  background-color: rgb(67, 202, 131, 0.75);
+  width: 100%;
+  height: inherit;
+  position: relative;
+  color: white;
+}
+.section1_greenbackground h1 {
+  font-size: 60px;
+  font-weight: 600;
+  position: absolute;
+  bottom: 120px;
+}
+.section1_greenbackground p {
+  font-size: 20px;
+  position: absolute;
+  bottom: 90px;
+}
+/* antra sekcija */
+.section2 {
+  width: 100%;
+
+  background-color: #f5f5f5;
+}
+.section2_leftside {
+  display: inline-block;
+  width: 50%;
+  height: 410px;
+}
+.section2_leftside h2 {
+  font-size: 30px;
+  color: black;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+.section2_leftside p {
+  padding-bottom: 30px;
+  line-height: 1.5;
+  padding-right: 30px;
+}
+
+.learnmore a {
+  border: none;
+  padding: 10px 15px;
+  background-color: rgb(67, 202, 131);
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+}
+
+.section2 img {
+  padding-top: 50px;
+  width: 50%;
+  float: right;
+  padding-bottom: 50px;
+}
+
+/* section3 */
+
+.section3_top {
+  text-align: center;
+}
+.section3_top h2 {
+  padding: 50px 0 30px 0;
+}
+.section3_top p {
+  margin: 0 auto;
+  padding-bottom: 40px;
+  line-height: 1.5;
+}
+.section3_bottom {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 50px;
+  align-items: center;
+}
+
+.bottom_block {
+  border: 3px solid rgb(67, 202, 131);
+  margin-bottom: 70px;
+  padding: 50px 0;
+  text-align: center;
+  flex-grow: 1;
+  flex-basis: 250px;
+  min-height: 220px;
+}
+.bottom_block img {
+  width: 40px;
+  padding: 25px;
+}
+.block_image {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto;
+  background-color: rgb(67, 202, 131);
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.bottom_block h3 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-decoration: underline rgb(67, 202, 131) solid;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 0.4rem;
+}
+.bottom_block p {
+  line-height: 1.5;
+  padding: 0px 10px;
+  text-align: center;
+}
+
+/* footer */
+.footer {
+  height: 300px;
+  background-color: #0e3655;
+  width: 100%;
+  color: white;
+  display: inline-block;
+}
+.footer_top {
+  text-align: center;
+}
+.footer_top h2 {
+  padding: 50px 0 30px 0;
+}
+.footer_top p {
+  margin: 0 auto;
+  padding-bottom: 60px;
+  line-height: 1.5;
+  border-bottom: 0.3px solid;
+}
+.footer_bottom {
+  padding-top: 30px;
+  color: #1c4462;
+  display: inline-block;
+  width: 100%;
+}
+.footer_bottom p {
+  float: left;
+}
+.copywrite {
+  color: rgb(67, 202, 131);
+}
+.footer_img {
+  float: right;
+}
+.footer_img img {
+  width: 20px;
+  padding-left: 10px;
+}

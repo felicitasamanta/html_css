@@ -1,0 +1,15 @@
+$main_text: #fff;
+$second_text: #557987;
+$background: #43bae3;
+
+
+%button{
+    font-size: 26px;
+    background-color: transparent;
+    border-width: 2px;
+    border-color: $main_text;
+    border-style: solid;
+    padding: 10px;
+    color: $main_text;
+    text-decoration: none;
+}

@@ -1,0 +1,11 @@
+.main{
+    background-image: url(../images/bg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+.plane_img{
+   transform: rotate(45deg);
+}
+
+/* be boostrap */

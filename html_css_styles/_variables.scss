@@ -1,0 +1,18 @@
+$headings_color: #ff6b01;
+
+$p_color: #fff;
+$p_font_size: 24px;
+$p_line_height: 1.5;
+$p_text_align: center;
+$p_font_weight: 300;
+$p_padding:20px;
+
+%p_for_all {
+    color: $p_color;
+    font-size: $p_font_size;
+    line-height: $p_line_height;
+    text-align: $p_text_align;
+    font-weight: $p_font_weight;
+    padding: $p_padding;
+
+}

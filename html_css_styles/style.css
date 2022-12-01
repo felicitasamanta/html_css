@@ -1,0 +1,85 @@
+.wrapper p {
+  color: #fff;
+  font-size: 24px;
+  line-height: 1.5;
+  text-align: center;
+  font-weight: 300;
+  padding: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.background {
+  background-color: #000;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+.background .back img {
+  width: 40px;
+  position: relative;
+  top: 50px;
+  left: 100px;
+}
+.background .background_img {
+  position: absolute;
+  height: 100%;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  top: 0;
+}
+
+h1,
+h2 {
+  color: #ff6b01;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+.wrapper h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 40px;
+}
+.cards {
+  display: flex;
+  padding-top: 50px;
+  gap: 10px;
+  min-height: 400px;
+  justify-content: center;
+  position: relative;
+  flex-wrap: wrap;
+}
+.cards a {
+  padding-top: 20px;
+  flex-grow: 1;
+  flex-basis: 200px;
+  background-color: rgba(38, 36, 36, 0.75);
+  text-decoration: none;
+}
+.cards a div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.cards a h2 {
+  font-weight: 800;
+  font-size: 30px;
+}
+.cards a img {
+  width: 300px;
+  height: 180px;
+}
+.cards a span {
+  font-weight: 800;
+  font-style: italic;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,140 @@
+@import "_variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+
+.header {
+  width: 100%;
+  background-color: $dark;
+  min-height: 70px;
+  color: $light-bg;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 5;
+
+  .header_wrapper {
+    @extend %wrapper;
+    justify-content: space-between;
+    align-items: center;
+    min-height: inherit;
+
+    .logo a {
+      font-family: $font;
+      font-size: 40px;
+      font-weight: 700;
+      text-decoration: none;
+      color: $light-bg;
+    }
+
+    .menu ul {
+      list-style: none;
+      display: flex;
+
+      li a {
+        text-decoration: none;
+        color: $light-bg;
+        font-size: 20px;
+        font-family: $font;
+        padding: 10px 0 10px 20px;
+        margin-left: 20px;
+
+        &hover {
+          text-shadow: -1 px 4px 4px rgba(255, 255, 255, 0.8);
+        }
+      }
+    }
+  }
+}
+//hero section styyle
+
+.hero {
+  background-color: $green;
+  min-height: 550px;
+  padding-top: 100px;
+
+  .hero_content {
+    min-height: inherit;
+    @extend %wrapper;
+
+    .hero_text {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      flex-basis: 350px;
+      justify-content: center;
+      h1 {
+        @extend %title;
+        font-weight: 700;
+      }
+      p {
+        @include text ($grey-text);
+      }
+      a{
+        @include button ($light-bg, $dark);
+      }
+    }
+    .hero_img {
+      position: relative;
+      flex-grow: 1;
+      flex-basis: 350px;
+      min-height: inherit;
+
+        .elipse {
+          position: absolute;
+          left: 80px;
+          bottom: 100px;
+          width: 70%;
+        }
+        .einshein {
+          position: absolute;
+          width: 100%;
+          left: 0;
+          bottom: -10px;
+        }
+
+    }
+
+  }
+}
+// about section
+
+.about {
+  width: 100%;
+  background-color: $light-bg;
+  min-height: 300px;
+  position: relative;
+  z-index: 2;
+
+  .about_content {
+    @extend %wrapper;
+    padding: 100px 0;
+
+    h2{
+      @extend %title;
+    }
+    .about_text {
+      margin-left: 25px;
+      p {
+        @include text($dark);
+        margin-bottom: 35px;
+        max-width: 590px;
+        }
+      .black {
+        @include button($light-bg, $dark);
+        &hover{
+          @include button($dark, $light-bg);
+        }
+      }
+      .white {
+        @include button ($dark, $light-bg);
+      }
+    }
+
+  }
+
+}
