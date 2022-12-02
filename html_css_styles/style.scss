@@ -17,7 +17,6 @@
     position: relative;
     top: 50px;
     left: 100px;
-    
   }
 
   .background_img {
@@ -29,7 +28,8 @@
   }
 }
 h1,
-h2{
+h2,
+.feature {
   color: $headings_color;
 }
 .wrapper {
@@ -55,7 +55,6 @@ h2{
   position: relative;
   flex-wrap: wrap;
 
-
   a {
     padding-top: 20px;
     flex-grow: 1;
@@ -63,7 +62,7 @@ h2{
     background-color: rgba(38, 36, 36, 0.75);
     text-decoration: none;
 
-    div{
+    div {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -81,6 +80,5 @@ h2{
       font-weight: 800;
       font-style: italic;
     }
-  
   }
 }
