@@ -16,12 +16,12 @@ $hero_text: #bcbcbc;
   line-height: $line-height;
 }
 
-@mixin a_hover($hover-width) {
+
+@mixin a_hover($hover-width, $hover-height) {
   content: "";
   position: absolute;
-  top: 0;
   left: -5px;
-  height: 4px;
+  height: $hover-height;
   top: 46px;
   background: $linear-gradient;
   width: $hover-width;

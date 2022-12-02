@@ -59,13 +59,13 @@ header {
         display: flex;
 
         &.projects:hover::after {
-          @include a_hover(108px);
+          @include a_hover(108px, 4px);
         }
         &.tech:hover::after {
-          @include a_hover(170px);
+          @include a_hover(170px, 4px);
         }
         &.about_me:hover::after {
-          @include a_hover(130px);
+          @include a_hover(130px, 4px);
         }
       }
     }
@@ -75,6 +75,13 @@ header {
     display: flex;
     gap: 55.67px;
     padding-top: 10px;
+    position: relative;
+    line-height: 36px;
+
+    &:hover::after {
+      margin-top: 10px;
+      @include a_hover(145px, 4px);
+    }
   }
 }
 // hero section
@@ -109,5 +116,68 @@ section {
     position: absolute;
     top: 0;
     right: -240px;
+  }
+}
+// SECTION PROJECTS
+#projects {
+  margin-top: 176px;
+  min-height: 1000px;
+
+  h2 {
+    @include text(55px, 600, 83px);
+    padding-left: 115px;
+  }
+  .one_card {
+    display: flex;
+
+    width: 1170px;
+    height: 600px;
+    margin: 109px 15px 0 15px;
+
+    background: #0f1624;
+    box-shadow: 0px 0px 12px #ffffff;
+    border-radius: 50px 0px;
+
+    .card_text {
+      flex-grow: 1;
+
+      a h3 {
+        @include text(36px, 600, 32px);
+        text-transform: uppercase;
+        padding-top: 88px;
+        padding-left: 188px;
+        position: relative;
+      }
+
+      // &:hover::after {
+      //   content: "";
+      //   position: absolute;
+      //   left: 0px;
+      //   height: 4px;
+      //   top: 0px;
+      //   background: $linear-gradient;
+      //   width: 200px;
+      // }
+
+      p {
+        @include text(28px, 600, 42px);
+        padding-top: 110px;
+        padding-left: 55px;
+      }
+      .button {
+        p {
+          margin-left: 185px;
+          margin-top: 64px;
+          @include button(19px 58px 19px 58px, 20px, 220px, 65px, 30px);
+          color: $main_text;
+        }
+      }
+      img {
+        padding-top: 30px;
+        padding-right: 27.79px;
+        width: 500px;
+        height: 541.09px;
+      }
+    }
   }
 }

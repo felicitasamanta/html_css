@@ -1,4 +1,4 @@
-.hero a p {
+#projects .one_card .card_text .button p, .hero a p {
   font-weight: 600;
   background: linear-gradient(270deg, #13adc7 0%, #6978d1 66.67%, #945dd6 100%);
   border: linear-gradient(270deg, #13adc7 0%, #6978d1 66.67%, #945dd6 100%) 2px solid;
@@ -75,7 +75,6 @@ header nav ul a {
 header nav ul a.projects:hover::after {
   content: "";
   position: absolute;
-  top: 0;
   left: -5px;
   height: 4px;
   top: 46px;
@@ -85,7 +84,6 @@ header nav ul a.projects:hover::after {
 header nav ul a.tech:hover::after {
   content: "";
   position: absolute;
-  top: 0;
   left: -5px;
   height: 4px;
   top: 46px;
@@ -95,7 +93,6 @@ header nav ul a.tech:hover::after {
 header nav ul a.about_me:hover::after {
   content: "";
   position: absolute;
-  top: 0;
   left: -5px;
   height: 4px;
   top: 46px;
@@ -106,6 +103,18 @@ header .icons {
   display: flex;
   gap: 55.67px;
   padding-top: 10px;
+  position: relative;
+  line-height: 36px;
+}
+header .icons:hover::after {
+  margin-top: 10px;
+  content: "";
+  position: absolute;
+  left: -5px;
+  height: 4px;
+  top: 46px;
+  background: linear-gradient(270deg, #13adc7 0%, #6978d1 66.67%, #945dd6 100%);
+  width: 145px;
 }
 
 section {
@@ -145,4 +154,59 @@ section {
   position: absolute;
   top: 0;
   right: -240px;
+}
+
+#projects {
+  margin-top: 176px;
+  min-height: 1000px;
+}
+#projects h2 {
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 83px;
+  padding-left: 115px;
+}
+#projects .one_card {
+  display: flex;
+  width: 1170px;
+  height: 600px;
+  margin: 109px 15px 0 15px;
+  background: #0f1624;
+  box-shadow: 0px 0px 12px #ffffff;
+  border-radius: 50px 0px;
+}
+#projects .one_card .card_text {
+  flex-grow: 1;
+}
+#projects .one_card .card_text a h3 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 32px;
+  text-transform: uppercase;
+  padding-top: 88px;
+  padding-left: 188px;
+  position: relative;
+}
+#projects .one_card .card_text p {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 42px;
+  padding-top: 110px;
+  padding-left: 55px;
+}
+#projects .one_card .card_text .button p {
+  margin-left: 185px;
+  margin-top: 64px;
+  padding: 19px 58px 19px 58px;
+  font-size: 20px;
+  width: 220px;
+  height: 65px;
+  line-height: 30px;
+  color: #fff;
+}
+#projects .one_card .card_text img {
+  padding-top: 30px;
+  padding-right: 27.79px;
+  width: 500px;
+  height: 541.09px;
 }/*# sourceMappingURL=style.css.map */
