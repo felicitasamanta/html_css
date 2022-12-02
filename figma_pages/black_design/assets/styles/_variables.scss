@@ -1,0 +1,43 @@
+$main_text: #fff;
+$background: rgba(15, 22, 36, 1);
+$linear-gradient: linear-gradient(
+  270deg,
+  #13adc7 0%,
+  #6978d1 66.67%,
+  #945dd6 100%
+);
+// $hover_effect: rgba(19, 173, 199, 1)
+
+$hero_text: #bcbcbc;
+
+@mixin text($size, $bold, $line-height) {
+  font-size: $size;
+  font-weight: $bold;
+  line-height: $line-height;
+}
+
+@mixin a_hover($hover-width) {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -5px;
+  height: 4px;
+  top: 46px;
+  background: $linear-gradient;
+  width: $hover-width;
+}
+
+%button_template {
+  font-weight: 600;
+  background: $linear-gradient;
+  border: $linear-gradient 2px solid;
+  border-radius: 83px;
+}
+@mixin button($padding, $font-size, $width, $height, $line-height) {
+  @extend %button_template;
+  padding: $padding;
+  font-size: $font-size;
+  width: $width;
+  height: $height;
+  line-height: $line-height;
+} ;

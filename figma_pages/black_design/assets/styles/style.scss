@@ -1,0 +1,113 @@
+@import "_variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: $main_text;
+}
+.background {
+  background-color: $background;
+  height: 100%;
+  width: 100%;
+}
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+// HEADER
+header {
+  max-height: 137px;
+  line-height: 137px;
+  padding-left: 37px;
+  padding-right: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .logo {
+    display: flex;
+    gap: 40px;
+
+    img {
+      width: 47.58px;
+      height: 47.58px;
+    }
+    p {
+      @include text(30px, 500, 45px);
+      margin-left: 30.71px;
+    }
+  }
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    ul {
+      list-style-type: none;
+      display: flex;
+      gap: 57px;
+      @media (max-width: 932px) {
+        display: none;
+      }
+
+      a {
+        @include text(24px, 500, 36px);
+        position: relative;
+        display: flex;
+
+        &.projects:hover::after {
+          @include a_hover(108px);
+        }
+        &.tech:hover::after {
+          @include a_hover(170px);
+        }
+        &.about_me:hover::after {
+          @include a_hover(130px);
+        }
+      }
+    }
+  }
+
+  .icons {
+    display: flex;
+    gap: 55.67px;
+    padding-top: 10px;
+  }
+}
+// hero section
+section {
+  min-height: 400px;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  padding-left: 115px;
+  position: relative;
+
+  h1 {
+    @include text(55px, 600, 83px);
+    padding-top: 146px;
+  }
+  p {
+    @include text(30px, 600, 45px);
+    padding-top: 67px;
+    width: 809px;
+    color: rgba(188, 188, 188, 1);
+  }
+
+  a {
+    p {
+      margin-top: 67px;
+      @include button(19px 64px 19px 63px, 28px, 280px, 80px, 42px);
+      color: $main_text;
+    }
+  }
+  img {
+    position: absolute;
+    top: 0;
+    right: -240px;
+  }
+}
