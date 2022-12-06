@@ -11,6 +11,7 @@
   background-color: $background;
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
 }
 .wrapper {
   max-width: 1200px;
@@ -121,12 +122,14 @@ section {
 // SECTION PROJECTS
 #projects {
   margin-top: 176px;
-  min-height: 1000px;
+
+  min-height: 600px;
 
   h2 {
     @include text(55px, 600, 83px);
     padding-left: 115px;
   }
+
   .one_card {
     display: flex;
 
@@ -137,47 +140,126 @@ section {
     background: #0f1624;
     box-shadow: 0px 0px 12px #ffffff;
     border-radius: 50px 0px;
+  }
 
-    .card_text {
-      flex-grow: 1;
+  .card_text {
+    flex-grow: 1;
 
-      a h3 {
-        @include text(36px, 600, 32px);
-        text-transform: uppercase;
-        padding-top: 88px;
-        padding-left: 188px;
-        position: relative;
-      }
+    a h3 {
+      @include text(36px, 600, 32px);
+      text-transform: uppercase;
+      padding-top: 88px;
+      padding-left: 188px;
+      position: relative;
 
-      // &:hover::after {
-      //   content: "";
-      //   position: absolute;
-      //   left: 0px;
-      //   height: 4px;
-      //   top: 0px;
-      //   background: $linear-gradient;
-      //   width: 200px;
-      // }
-
-      p {
-        @include text(28px, 600, 42px);
-        padding-top: 110px;
-        padding-left: 55px;
-      }
-      .button {
-        p {
-          margin-left: 185px;
-          margin-top: 64px;
-          @include button(19px 58px 19px 58px, 20px, 220px, 65px, 30px);
-          color: $main_text;
-        }
-      }
-      img {
-        padding-top: 30px;
-        padding-right: 27.79px;
-        width: 500px;
-        height: 541.09px;
+      &:hover::after {
+        content: "";
+        position: absolute;
+        left: 135px;
+        height: 10px;
+        top: 147px;
+        background: $linear-gradient;
+        width: 320px;
+        border-radius: 83px;
+        transform: matrix(1, 0, 0, -1, 0, 0);
       }
     }
+
+    p {
+      @include text(28px, 600, 42px);
+      padding-top: 110px;
+      padding-left: 55px;
+    }
+    .button {
+      p {
+        margin-left: 185px;
+        margin-top: 64px;
+        @include button(19px 58px 19px 58px, 20px, 220px, 65px, 30px);
+        color: $main_text;
+      }
+    }
+  }
+  .image {
+    img {
+      padding-top: 30px;
+      padding-right: 27.79px;
+      width: 500px;
+      height: 541.09px;
+    }
+  }
+}
+
+.two_cards {
+  margin-top: 139px;
+  display: flex;
+  flex-grow: 1;
+  width: 1200px;
+  justify-content: space-between;
+
+  .two_cards_one {
+    background: #0f1624;
+    box-shadow: 0px 0px 12px #ffffff;
+    border-radius: 50px 0px;
+    width: 531.82px;
+    display: flex;
+    flex-direction: column;
+
+    .img {
+      width: 100%;
+      flex-grow: 1;
+
+      img {
+        padding: 25.71px 24.17px 0;
+        width: 100%;
+        height: 273.6px;
+      }
+    }
+    a h3 {
+      @include text(36px, 600, 32px);
+      text-transform: uppercase;
+      padding-top: 30.86px;
+      text-align: center;
+      position: relative;
+
+      &:hover::after {
+        content: "";
+        position: absolute;
+        left: 120px;
+        height: 4.11px;
+        top: 80px;
+        background: $linear-gradient;
+        width: 290px;
+        border-radius: 83px;
+        transform: matrix(1, 0, 0, -1, 0, 0);
+      }
+    }
+    p {
+      @include text(28px, 600, 42px);
+      padding-top: 30px;
+      width: 90%;
+      text-align: left;
+      padding-left: calc((100% - 85%) / 2);
+      height: 216px;
+    }
+    .button {
+      margin: 0 auto;
+      p {
+        margin-left: 159px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        @include button(16.25px 57.3px 16.25px 57.2px, 20px, 220px, 65px, 30px);
+        color: $main_text;
+      }
+    }
+  }
+}
+
+//Section TECHNOLOGIES
+#technologies {
+  margin-top: 180px;
+
+  h2 {
+    @include text(64px, 600, 96px);
+    padding-left: 115px;
   }
 }

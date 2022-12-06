@@ -1,4 +1,4 @@
-#projects .one_card .card_text .button p, .hero a p {
+.two_cards .two_cards_one .button p, #projects .card_text .button p, .hero a p {
   font-weight: 600;
   background: linear-gradient(270deg, #13adc7 0%, #6978d1 66.67%, #945dd6 100%);
   border: linear-gradient(270deg, #13adc7 0%, #6978d1 66.67%, #945dd6 100%) 2px solid;
@@ -17,6 +17,7 @@
   background-color: rgb(15, 22, 36);
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -158,7 +159,7 @@ section {
 
 #projects {
   margin-top: 176px;
-  min-height: 1000px;
+  min-height: 600px;
 }
 #projects h2 {
   font-size: 55px;
@@ -175,10 +176,10 @@ section {
   box-shadow: 0px 0px 12px #ffffff;
   border-radius: 50px 0px;
 }
-#projects .one_card .card_text {
+#projects .card_text {
   flex-grow: 1;
 }
-#projects .one_card .card_text a h3 {
+#projects .card_text a h3 {
   font-size: 36px;
   font-weight: 600;
   line-height: 32px;
@@ -187,14 +188,25 @@ section {
   padding-left: 188px;
   position: relative;
 }
-#projects .one_card .card_text p {
+#projects .card_text a h3:hover::after {
+  content: "";
+  position: absolute;
+  left: 135px;
+  height: 10px;
+  top: 147px;
+  background: linear-gradient(270deg, #13adc7 0%, #6978d1 66.67%, #945dd6 100%);
+  width: 320px;
+  border-radius: 83px;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+#projects .card_text p {
   font-size: 28px;
   font-weight: 600;
   line-height: 42px;
   padding-top: 110px;
   padding-left: 55px;
 }
-#projects .one_card .card_text .button p {
+#projects .card_text .button p {
   margin-left: 185px;
   margin-top: 64px;
   padding: 19px 58px 19px 58px;
@@ -204,9 +216,88 @@ section {
   line-height: 30px;
   color: #fff;
 }
-#projects .one_card .card_text img {
+#projects .image img {
   padding-top: 30px;
   padding-right: 27.79px;
   width: 500px;
   height: 541.09px;
+}
+
+.two_cards {
+  margin-top: 139px;
+  display: flex;
+  flex-grow: 1;
+  width: 1200px;
+  justify-content: space-between;
+}
+.two_cards .two_cards_one {
+  background: #0f1624;
+  box-shadow: 0px 0px 12px #ffffff;
+  border-radius: 50px 0px;
+  width: 531.82px;
+  display: flex;
+  flex-direction: column;
+}
+.two_cards .two_cards_one .img {
+  width: 100%;
+  flex-grow: 1;
+}
+.two_cards .two_cards_one .img img {
+  padding: 25.71px 24.17px 0;
+  width: 100%;
+  height: 273.6px;
+}
+.two_cards .two_cards_one a h3 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 32px;
+  text-transform: uppercase;
+  padding-top: 30.86px;
+  text-align: center;
+  position: relative;
+}
+.two_cards .two_cards_one a h3:hover::after {
+  content: "";
+  position: absolute;
+  left: 120px;
+  height: 4.11px;
+  top: 80px;
+  background: linear-gradient(270deg, #13adc7 0%, #6978d1 66.67%, #945dd6 100%);
+  width: 290px;
+  border-radius: 83px;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+.two_cards .two_cards_one p {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 42px;
+  padding-top: 30px;
+  width: 90%;
+  text-align: left;
+  padding-left: 7.5%;
+  height: 216px;
+}
+.two_cards .two_cards_one .button {
+  margin: 0 auto;
+}
+.two_cards .two_cards_one .button p {
+  margin-left: 159px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  padding: 16.25px 57.3px 16.25px 57.2px;
+  font-size: 20px;
+  width: 220px;
+  height: 65px;
+  line-height: 30px;
+  color: #fff;
+}
+
+#technologies {
+  margin-top: 180px;
+}
+#technologies h2 {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 96px;
+  padding-left: 115px;
 }/*# sourceMappingURL=style.css.map */
