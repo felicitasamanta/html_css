@@ -1,4 +1,4 @@
-.two_cards .two_cards_one .button p, #projects .card_text .button p, .hero a p {
+main .two_cards .two_cards_one .button p, main #projects .card_text .button p, main .hero a p {
   font-weight: 600;
   background: linear-gradient(270deg, #13adc7 0%, #6978d1 66.67%, #945dd6 100%);
   border: linear-gradient(270deg, #13adc7 0%, #6978d1 66.67%, #945dd6 100%) 2px solid;
@@ -118,23 +118,22 @@ header .icons:hover::after {
   width: 145px;
 }
 
-section {
+main section {
   min-height: 400px;
 }
-
-.hero {
+main .hero {
   display: flex;
   flex-direction: column;
   padding-left: 115px;
   position: relative;
 }
-.hero h1 {
+main .hero h1 {
   font-size: 55px;
   font-weight: 600;
   line-height: 83px;
   padding-top: 146px;
 }
-.hero p {
+main .hero p {
   font-size: 30px;
   font-weight: 600;
   line-height: 45px;
@@ -142,7 +141,7 @@ section {
   width: 809px;
   color: rgb(188, 188, 188);
 }
-.hero a p {
+main .hero a p {
   margin-top: 67px;
   padding: 19px 64px 19px 63px;
   font-size: 28px;
@@ -151,24 +150,24 @@ section {
   line-height: 42px;
   color: #fff;
 }
-.hero img {
+main .hero img {
   position: absolute;
   top: 0;
   right: -240px;
 }
-
-#projects {
+main #projects {
   margin-top: 176px;
   min-height: 600px;
 }
-#projects h2 {
+main #projects h2 {
   font-size: 55px;
   font-weight: 600;
   line-height: 83px;
   padding-left: 115px;
 }
-#projects .one_card {
+main #projects .one_card {
   display: flex;
+  padding: 30px 27.79px 30px 55px;
   width: 1170px;
   height: 600px;
   margin: 109px 15px 0 15px;
@@ -176,39 +175,40 @@ section {
   box-shadow: 0px 0px 12px #ffffff;
   border-radius: 50px 0px;
 }
-#projects .card_text {
+main #projects .card_text {
   flex-grow: 1;
 }
-#projects .card_text a h3 {
+main #projects .card_text a h3 {
   font-size: 36px;
   font-weight: 600;
   line-height: 32px;
   text-transform: uppercase;
-  padding-top: 88px;
-  padding-left: 188px;
+  padding-top: 58px;
+  padding-left: 133px;
   position: relative;
 }
-#projects .card_text a h3:hover::after {
+main #projects .card_text a h3:hover::after {
   content: "";
   position: absolute;
-  left: 135px;
+  left: 80px;
   height: 10px;
-  top: 147px;
+  top: 115px;
   background: linear-gradient(270deg, #13adc7 0%, #6978d1 66.67%, #945dd6 100%);
   width: 320px;
   border-radius: 83px;
   transform: matrix(1, 0, 0, -1, 0, 0);
 }
-#projects .card_text p {
+main #projects .card_text p {
   font-size: 28px;
   font-weight: 600;
   line-height: 42px;
-  padding-top: 110px;
-  padding-left: 55px;
+  margin-top: 110px;
+  width: 500px;
+  height: 194px;
 }
-#projects .card_text .button p {
+main #projects .card_text .button p {
   margin-left: 185px;
-  margin-top: 64px;
+  margin-top: 32px;
   padding: 19px 58px 19px 58px;
   font-size: 20px;
   width: 220px;
@@ -216,38 +216,36 @@ section {
   line-height: 30px;
   color: #fff;
 }
-#projects .image img {
-  padding-top: 30px;
-  padding-right: 27.79px;
+main #projects .image img {
   width: 500px;
   height: 541.09px;
 }
-
-.two_cards {
+main .two_cards {
   margin-top: 139px;
   display: flex;
   flex-grow: 1;
   width: 1200px;
   justify-content: space-between;
 }
-.two_cards .two_cards_one {
+main .two_cards .two_cards_one {
   background: #0f1624;
   box-shadow: 0px 0px 12px #ffffff;
   border-radius: 50px 0px;
   width: 531.82px;
   display: flex;
   flex-direction: column;
+  padding: 25.71px 24.17px 30px 24.17px;
+  height: 720px;
 }
-.two_cards .two_cards_one .img {
+main .two_cards .two_cards_one .img {
   width: 100%;
   flex-grow: 1;
 }
-.two_cards .two_cards_one .img img {
-  padding: 25.71px 24.17px 0;
+main .two_cards .two_cards_one .img img {
   width: 100%;
   height: 273.6px;
 }
-.two_cards .two_cards_one a h3 {
+main .two_cards .two_cards_one a h3 {
   font-size: 36px;
   font-weight: 600;
   line-height: 32px;
@@ -256,10 +254,10 @@ section {
   text-align: center;
   position: relative;
 }
-.two_cards .two_cards_one a h3:hover::after {
+main .two_cards .two_cards_one a h3:hover::after {
   content: "";
   position: absolute;
-  left: 120px;
+  left: 97.08px;
   height: 4.11px;
   top: 80px;
   background: linear-gradient(270deg, #13adc7 0%, #6978d1 66.67%, #945dd6 100%);
@@ -267,23 +265,18 @@ section {
   border-radius: 83px;
   transform: matrix(1, 0, 0, -1, 0, 0);
 }
-.two_cards .two_cards_one p {
+main .two_cards .two_cards_one p {
   font-size: 28px;
   font-weight: 600;
   line-height: 42px;
-  padding-top: 30px;
-  width: 90%;
+  margin-top: 46px;
+  width: 483.47px;
   text-align: left;
-  padding-left: 7.5%;
+  padding-left: 5.54px;
   height: 216px;
 }
-.two_cards .two_cards_one .button {
+main .two_cards .two_cards_one .button p {
   margin: 0 auto;
-}
-.two_cards .two_cards_one .button p {
-  margin-left: 159px;
-  margin-top: 50px;
-  margin-bottom: 30px;
   padding: 16.25px 57.3px 16.25px 57.2px;
   font-size: 20px;
   width: 220px;
@@ -291,13 +284,67 @@ section {
   line-height: 30px;
   color: #fff;
 }
-
-#technologies {
+main #technologies {
   margin-top: 180px;
 }
-#technologies h2 {
+main #technologies h2 {
   font-size: 64px;
   font-weight: 600;
   line-height: 96px;
   padding-left: 115px;
+}
+main #technologies .all {
+  padding-top: 103px;
+}
+main #technologies .all .one_scale {
+  margin-bottom: 55.3px;
+}
+main #technologies .all .one_scale .language {
+  display: flex;
+  justify-content: space-between;
+}
+main #technologies .all .one_scale .language h4 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 54px;
+  width: 139.55px;
+  height: 54px;
+  flex-grow: 3;
+}
+main #technologies .all .one_scale .language p {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  width: 177.42px;
+  height: 36px;
+  flex-grow: 1;
+}
+main #technologies .all .one_scale .exp_outside {
+  width: 1170px;
+  height: 32px;
+  border-radius: 83px;
+  background: #162950;
+}
+main #technologies .all .one_scale .exp_outside .exp_inside {
+  background: linear-gradient(270deg, #13adc7 0%, #6978d1 66.67%, #945dd6 100%);
+  border-radius: 83px;
+  height: 31.7px;
+}
+main #technologies .all .one_scale .exp_outside .exp_inside .one {
+  width: 877.5px;
+}
+main #technologies .all .one_scale .exp_outside .exp_inside .two {
+  width: 877.5px;
+}
+main #technologies .all .one_scale .exp_outside .exp_inside .three {
+  width: 877.5px;
+}
+main #technologies .all .one_scale .exp_outside .exp_inside .four {
+  width: 585px;
+}
+main #technologies .all .one_scale .exp_outside .exp_inside .five {
+  width: 292.5px;
+}
+main #technologies .all .one_scale .exp_outside .exp_inside .six {
+  width: 292.5px;
 }/*# sourceMappingURL=style.css.map */

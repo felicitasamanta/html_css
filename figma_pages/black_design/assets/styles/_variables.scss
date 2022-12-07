@@ -41,3 +41,6 @@ $hero_text: #bcbcbc;
   height: $height;
   line-height: $line-height;
 } ;
+@mixin width($width) {
+  width: $width;
+}
